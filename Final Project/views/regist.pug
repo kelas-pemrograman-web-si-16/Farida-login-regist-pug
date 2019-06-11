@@ -1,0 +1,52 @@
+html
+    head
+        include head
+    body
+        .limiter
+            .wrap-login100
+                form.login100-form.validate-form
+                    span.login100-form-title.p-b-10
+                        | Registrasi
+                    .wrap-input100
+                        input.input100(type='text')
+                        span.focus-input100
+                        span.label-input100 Name
+                    .wrap-input100
+                        input.input100(type='text')
+                        span.focus-input100
+                        span.label-input100 Phone
+                    .wrap-input100.validate-input(data-validate='Valid email is required: ex@abc.xyz')
+                        input.input100(type='email', name='email')
+                        span.focus-input100
+                        span.label-input100 Email
+                    .wrap-input100.validate-input(data-validate='Password is required')
+                        input.input100(type='password', name='pass')
+                        span.focus-input100
+                        span.label-input100 Password
+                    .flex-sb-m.w-full.p-t-3.p-b-32
+                        .contact100-form-checkbox
+                            input#ckb1.input-checkbox100(type='checkbox', name='remember-me')
+                            label.label-checkbox100(for='ckb1')
+                                | Remember me
+                    .container-login100-form-btn
+                        button.login100-form-btn
+                            | Sign Up
+                    .input-group
+                        center
+                            small
+                                label.label Already Account ?
+                                    a(href="/login") Login Here
+                .login100-more(style="background-image: url('loginassets/images/satu.jpg');")
+
+
+            script(src='loginassets/vendor/jquery/jquery-3.2.1.min.js', type='text/javascript')
+            script(src='loginassets/vendor/animsition/js/animsition.min.js', type='text/javascript')
+            script(src='loginassets/vendor/bootstrap/js/popper.js', type='text/javascript')
+            script(src='loginassets/vendor/bootstrap/js/bootstrap.min.js', type='text/javascript')
+            script(src='loginassets/vendor/select2/select2.min.js', type='text/javascript')
+            script(src='loginassets/vendor/daterangepicker/moment.min.js', type='text/javascript')
+            script(src='loginassets/vendor/daterangepicker/daterangepicker.js', type='text/javascript')
+            script(src='loginassets/vendor/countdowntime/countdowntime.js', type='text/javascript')
+            script(src='loginassets/js/main.js', type='text/javascript')
+            script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-23581568-13', type='text/javascript')
+            script(type='text/javascript')

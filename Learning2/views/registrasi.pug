@@ -1,0 +1,69 @@
+html
+    head
+        include head.pug
+    body
+        .page-wrapper.bg-gra-02.p-t-130.p-b-100.font-poppins
+            .wrapper.wrapper--w680
+                .card.card-4
+                    .card-body
+                        h2.title Registration Form
+                        form(method='POST')
+                            .row.row-space
+                                .col-2
+                                    .input-group
+                                        label.label first name
+                                        input.input--style-4(type='text', name='first_name')
+                                .col-2
+                                    .input-group
+                                        label.label last name
+                                        input.input--style-4(type='text', name='last_name')
+                            .row.row-space
+                                .col-2
+                                    .input-group
+                                        label.label Birthday
+                                        .input-group-icon
+                                            input.input--style-4.js-datepicker(type='text', name='birthday')
+                                            i.zmdi.zmdi-calendar-note.input-icon.js-btn-calendar
+                                .col-2
+                                    .input-group
+                                        label.label Gender
+                                        .p-t-10
+                                            label.radio-container.m-r-45
+                                                | Male
+                                                input(type='radio', checked='checked', name='gender')
+                                                span.checkmark
+                                            label.radio-container
+                                                | Female
+                                                input(type='radio', name='gender')
+                                                span.checkmark
+                            .row.row-space
+                                .col-2
+                                    .input-group
+                                        label.label Email
+                                        input.input--style-4(type='email', name='email')
+                                .col-2
+                                    .input-group
+                                        label.label Phone Number
+                                        input.input--style-4(type='text', name='phone')
+                            .input-group
+                                label.label Subject
+                                .rs-select2.js-select-simple.select--no-search
+                                    select(name='subject')
+                                        option(disabled='disabled', selected='selected') Choose option
+                                        option Subject 1
+                                        option Subject 2
+                                        option Subject 3
+                                    .select-dropdown
+                            .p-t-15
+                                button.btn.btn--radius-2.btn--blue(type='submit') Submit
+                            .input-group
+                                label.label Sudah Punya Akun ?
+                                    a(href="/login") Login Disini
+        // Jquery JS
+        script(src='loginassets/vendor/jquery/jquery.min.js')
+        // Vendor JS
+        script(src='loginassets/vendor/select2/select2.min.js')
+        script(src='loginassets/vendor/datepicker/moment.min.js')
+        script(src='loginassets/vendor/datepicker/daterangepicker.js')
+        // Main JS
+        script(src='loginassets/js/global.js')

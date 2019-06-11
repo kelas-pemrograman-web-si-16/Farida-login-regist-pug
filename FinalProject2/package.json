@@ -1,0 +1,17 @@
+{
+  "name": "finalproject2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "author": "farida",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "express": "~4.15.2",
+    "pug": "~2.0.0-beta11",
+    "swig": "^1.4.2"
+  }
+}

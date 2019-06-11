@@ -1,0 +1,46 @@
+html
+    head
+        include head.pug
+    body
+        .limiter
+            .container-login100
+                .wrap-login100
+                    form.login100-form.validate-form
+                        span.login100-form-title.p-b-20
+                            .login100-more(style="background-image: url('images/main.jpg');")
+                            | Login
+                        .wrap-input100.validate-input(data-validate='Valid email is required: ex@abc.xyz')
+                            input.input100(type='text', name='email')
+                            span.focus-input100
+                            span.label-input100 Email
+                        .wrap-input100.validate-input(data-validate='Password is required')
+                            input.input100(type='password', name='pass')
+                            span.focus-input100
+                            span.label-input100 Password
+                        .flex-sb-m.w-full.p-t-3.p-b-32
+                            .contact100-form-checkbox
+                                input#ckb1.input-checkbox100(type='checkbox', name='remember-me')
+                                label.label-checkbox100(for='ckb1')
+                                    | Remember me
+                            div
+                                a.txt1(href='#')
+                                    | Forgot Password?
+                        .container-login100-form-btn
+                            button.login100-form-btn
+                                | Login
+                        .input-group
+                            center
+                                small
+                                    label.label Don't Have Account ?
+                                        a(href="/regist") Sign Up Here
+                    .login100-more(style="background-image: url('loginassets/images/main.jpg');")
+
+                    script(src='loginassets/vendor/jquery/jquery-3.2.1.min.js')
+                    script(src='loginassets/vendor/animsition/js/animsition.min.js')
+                    script(src='loginassets/vendor/bootstrap/js/popper.js')
+                    script(src='loginassets/vendor/bootstrap/js/bootstrap.min.js')
+                    script(src='loginassets/vendor/select2/select2.min.js')
+                    script(src='loginassets/vendor/daterangepicker/moment.min.js')
+                    script(src='loginassets/vendor/daterangepicker/daterangepicker.js')
+                    script(src='loginassets/vendor/countdowntime/countdowntime.js')
+                    script(src='loginassets/js/main.js')
